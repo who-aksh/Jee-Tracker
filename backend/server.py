@@ -36,6 +36,10 @@ async def get_daily_quote():
 api_router.include_router(auth.router)
 api_router.include_router(user.router)
 api_router.include_router(syllabus.router)
+api_router.include_router(tests.router)
+api_router.include_router(timetable.router)
+api_router.include_router(flashcards.router)
+api_router.include_router(goals.router)
 
 # Include the main API router in the app
 app.include_router(api_router)
