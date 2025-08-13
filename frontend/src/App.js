@@ -6,12 +6,10 @@ import Sidebar from './components/Sidebar';
 import CompleteDashboard from './components/Dashboard/CompleteDashboard';
 import SyllabusManager from './components/SyllabusManager/SyllabusManager';
 import Analytics from './components/Analytics/Analytics';
-
-// Placeholder components - to be implemented next
-const Timetable = () => <div className="p-8"><h1 className="text-2xl font-bold text-gray-900 dark:text-white">Timetable & Daily Plan - Coming Soon</h1></div>;
-const Flashcards = () => <div className="p-8"><h1 className="text-2xl font-bold text-gray-900 dark:text-white">Flashcards & Revision - Coming Soon</h1></div>;
-const Calendar = () => <div className="p-8"><h1 className="text-2xl font-bold text-gray-900 dark:text-white">Calendar & Goal Tracking - Coming Soon</h1></div>;
-const Goals = () => <div className="p-8"><h1 className="text-2xl font-bold text-gray-900 dark:text-white">Gamification & Goals - Coming Soon</h1></div>;
+import Timetable from './components/Timetable/Timetable';
+import Flashcards from './components/Flashcards/Flashcards';
+import CalendarGoals from './components/Calendar/CalendarGoals';
+import Gamification from './components/Gamification/Gamification';
 
 function App() {
   return (
@@ -28,8 +26,8 @@ function App() {
                   <Route path="/analytics" element={<Analytics />} />
                   <Route path="/timetable" element={<Timetable />} />
                   <Route path="/flashcards" element={<Flashcards />} />
-                  <Route path="/calendar" element={<Calendar />} />
-                  <Route path="/goals" element={<Goals />} />
+                  <Route path="/calendar" element={<CalendarGoals />} />
+                  <Route path="/goals" element={<Gamification />} />
                 </Routes>
               </div>
             </main>
