@@ -5,7 +5,7 @@ import os
 import logging
 from pathlib import Path
 from database import connect_to_mongo, close_mongo_connection, MOTIVATIONAL_QUOTES
-from routes import auth, user, syllabus
+from routes import auth, user, syllabus, tests, timetable, flashcards, goals
 import random
 
 ROOT_DIR = Path(__file__).parent
